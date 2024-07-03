@@ -1,0 +1,50 @@
+.about-grid {
+  @media screen and (max-width: 1200px) {
+    flex-direction: column-reverse;
+  }
+}
+
+
+.grid-column {
+  .section-grid-about {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    h2{
+      width: 100%;
+      font-size: 3.5rem;
+      font-family: roboto-bold;
+    }
+
+    h3{
+      font-size: 1rem;
+      font-family: roboto;
+    }
+
+    p{
+      font-size: 1.75rem;
+      font-family: roboto;
+    }
+
+    .section-content {
+      padding-top: 3.125rem;
+      padding-bottom: 1.875rem;
+    }
+
+    @media screen and (max-width: 992px) {
+      margin: side-values(auto 120px auto 40px);
+    }
+  }
+}
+
+#dark .grid-column{
+  background-color: $dark-bg-color-2;
+  color: $dark-text-color;
+}
+
+#light .grid-column{
+  background-color: $light-bg-color-1;
+  color: $light-text-color;
+}
+

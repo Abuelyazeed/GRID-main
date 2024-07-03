@@ -1,0 +1,55 @@
+// @media screen and (max-width: 567px) {
+//   .card-article:not(:first-child) {
+//     display: none;
+//   }
+// }
+
+.card-article:not(:first-child) {
+  display: none;
+}
+.lineArticles {
+  display: none;
+  background: $d-gray-6;
+  height: 2px;
+}
+
+#dark .article-section {
+  background-color: $dark-bg-color-1;
+}
+
+.wrapperarticles {
+  margin: auto;
+  width: 80%;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+.buttonarticles {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+//Desktop
+@include media-breakpoint-up(xl) {
+  .buttonarticles {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: auto;
+  }
+  .card-article:not(:first-child) {
+    display: inline;
+  }
+  .lineArticles {
+    display: block;
+  }
+}
+
+//Tablet
+// @include media-breakpoint-up(md) {
+//   .wrapperarticles {
+//     width: 70%;
+//   }
+// }

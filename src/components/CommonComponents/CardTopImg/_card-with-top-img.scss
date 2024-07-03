@@ -1,0 +1,219 @@
+.top,
+.middle,
+.bottom {
+  padding: 0.6rem;
+}
+
+.top,
+.bottom {
+  font-family: roboto;
+}
+.pink {
+  color: $l-pink;
+  text-decoration: underline;
+}
+.link {
+  text-decoration: none;
+  color: $black;
+  opacity: 86%;
+  line-height: 1;
+}
+
+.event-card {
+  text-align: left;
+  padding: 0;
+
+  a {
+    background: linear-gradient(0deg, $l-pink, $l-pink) no-repeat right bottom /
+      0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 1.5px;
+  }
+  a:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+    padding-bottom: 2px;
+    color: inherit;
+  }
+  .top {
+    font-size: 1rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    padding-top: 0.6rem;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  .middle {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+    padding-left: 0;
+  }
+
+  .bottom {
+    font-size: 1.2rem;
+    padding-left: 0;
+  }
+  .icon-right-arrow {
+    font-size: 0.9rem;
+  }
+  .icon-calendar {
+    color: #e4007e;
+    font-size: 1.7rem;
+    margin-right: 0.7rem;
+  }
+}
+
+#dark .event-card {
+  background-color: $dark-bg-color-2;
+  color: $dark-text-color;
+}
+
+#dark .card-text {
+  color: $dark-text-color;
+}
+
+#dark .article-card {
+  background: $dark-bg-color-2;
+  color: $dark-text-color;
+}
+
+/////ARTICLECARD/////////////////////////////
+.article-card {
+  background: $light-bg-color-1;
+  //width: 18rem;
+  //height: 30rem;
+
+  .icon-calendar {
+    color: $pink;
+    //margin-left: 10rem;
+    font-size: 0.9rem;
+    margin-right: 0.4rem;
+  }
+  .icon-Pen {
+    color: $pink;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+  }
+  .icon-Line {
+    position: relative;
+    font-size: 1.1rem;
+    margin-right: 2rem;
+    top: 2px;
+  }
+  #light .top {
+    font-size: 0.85rem;
+    color: $d-gray-3;
+  }
+  #dark .top {
+    font-size: 0.85rem;
+    color: $dark-text-color;
+  }
+
+  .bottom {
+    opacity: 86%;
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+    margin-top: 1.2rem;
+    .date {
+      float: right;
+    }
+    .name {
+      float: left;
+    }
+  }
+
+  #light .bottom {
+    color: $d-gray-3;
+  }
+
+  #dark .bottom {
+    color: $dark-text-color;
+  }
+
+  .middle {
+    font-family: roboto-bold;
+    font-size: 1.5rem;
+    word-spacing: 1px;
+    margin-bottom: 1rem;
+    &:hover {
+      color: $secondary;
+    }
+  }
+  .top {
+    margin: 0;
+  }
+}
+.inner {
+  overflow: hidden;
+}
+.card .card-img-top {
+  transition: all 0.5s ease;
+}
+.card:hover .card-img-top,
+.card:focus .card-img-top {
+  transform: scale(1.04);
+}
+
+.event-listing-card {
+  .icon-calendar {
+    font-size: 0.9rem;
+    margin-right: 0.4rem;
+  }
+  .icon-Line {
+    position: relative;
+    font-size: 1.2rem;
+    margin-right: 2.7rem;
+    top: 2px;
+  }
+  .top {
+    font-size: 1rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .bottom {
+    opacity: 85%;
+    font-size: 1rem;
+    font-family: roboto-light;
+    margin-bottom: 2rem;
+    //margin-top: 1rem;
+  }
+  .middle {
+    font-family: roboto-bold;
+    font-size: 1.7rem;
+    word-spacing: 1px;
+    color: black;
+    padding-bottom: 0;
+    &:hover {
+      color: $secondary;
+    }
+  }
+}
+
+#light .event-listing-card {
+  background-color: $d-gray-6;
+  color: $d-gray-3;
+  .icon-calendar {
+    color: $pink;
+  }
+}
+
+#dark .event-listing-card {
+  background-color: $dark-bg-color-2;
+  color: $dark-text-color;
+  .icon-calendar {
+    color: $pink;
+  }
+}
+
+//Mobile
+@include media-breakpoint-up(xs) {
+  .article-card {
+    .top {
+      font-size: 0.9rem;
+    }
+    .middle {
+      font-size: 1.4rem;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.error-section {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  left: 0;
+  top: 0;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(180deg, rgba(68, 224, 125, 1) 0%, rgba(81, 48, 181, 1) 100%);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(180deg, rgba(68, 224, 125, 1) 0%, rgba(81, 48, 181, 1) 100%);
+
+
+  .error-section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .image-layer {
+      padding: 20vh;
+      background-image: url("../../../assets/images/error.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    h2 {
+      //margin-bottom: 30px;
+      padding: 1.5vmin 10vmin;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 76);
+    }
+  }
+}
+

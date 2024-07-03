@@ -1,0 +1,102 @@
+.image-overlay-wrapper {
+  position: relative;
+
+  .become-a-member-section {
+    width: 100%;
+    display: block;
+    background-image: url("../../../assets/images/become-a-member.webp");
+    background-size: cover;
+    background-position: 0 -12rem;
+
+    @media screen and (max-width: 992px) {
+      background-position: center;
+    }
+
+    .img-gradient {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: -webkit-linear-gradient(
+        -90deg,
+        rgba(157, 139, 213, 0.56) 23%,
+        rgba(116, 89, 195, 0.8) 56%,
+        rgba(90, 59, 185, 0.95) 70%,
+        rgba(81, 48, 181, 1) 100%
+      );
+
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: linear-gradient(
+        -90deg,
+        rgba(157, 139, 213, 0.56) 23%,
+        rgba(116, 89, 195, 0.8) 56%,
+        rgba(90, 59, 185, 0.95) 70%,
+        rgba(81, 48, 181, 1) 100%
+      );
+    }
+
+    .member-section-content {
+      position: relative;
+      padding-top: 8.125rem;
+      padding-bottom: 5rem;
+      // margin: side-values(auto 350px auto 60px);
+
+      h2 {
+        margin-bottom: 1.875rem;
+        font-size: 3.125rem;
+        font-family: roboto-bold;
+      }
+
+      @media screen and (max-width: 992px) {
+        margin: side-values(auto 120px auto 30px);
+      }
+
+      p {
+        color: $white;
+        margin-bottom: 30px;
+        font-size: 1.75rem;
+        font-family: roboto;
+      }
+    }
+  }
+
+  .semi-circles {
+    &:after {
+      content: "";
+      bottom: 0;
+      position: absolute;
+      width: 100%;
+      display: block;
+      height: 3.125rem;
+      background-size: 100px 150%;
+      background-image: radial-gradient(
+        ellipse at center,
+        $white 50%,
+        transparent 25%
+      );
+      background-position: 0 0;
+      background-repeat: space;
+    }
+
+    #dark &:after {
+      content: "";
+      bottom: 0;
+      position: absolute;
+      width: 100%;
+      z-index: 10;
+      display: block;
+      height: 3.125rem;
+      background-size: 100px 150%;
+      background-image: radial-gradient(
+        ellipse at center,
+        $dark-bg-color-1 50%,
+        transparent 25%
+      );
+      background-position: 0 0;
+      background-repeat: space;
+    }
+  }
+}

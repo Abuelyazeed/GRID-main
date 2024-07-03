@@ -1,0 +1,170 @@
+@import "variables";
+
+@font-face {
+  font-family: "#{$icomoon-font-family}";
+  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?xt1q5f");
+  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?xt1q5f#iefix")
+      format("embedded-opentype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?xt1q5f")
+      format("truetype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.woff?xt1q5f")
+      format("woff"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.svg?xt1q5f##{$icomoon-font-family}")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "#{$icomoon-font-family}" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-a-regular {
+  &:before {
+    content: $icon-a-regular;
+  }
+}
+.icon-settings {
+  &:before {
+    content: $icon-settings;
+  }
+}
+.icon-filter {
+  &:before {
+    content: $icon-filter;
+    color: #464646;
+  }
+}
+.icon-down-arrow {
+  &:before {
+    content: $icon-down-arrow;
+    color: $white;
+  }
+}
+.icon-exit-nav {
+  &:before {
+    content: $icon-exit-nav;
+    color: $white;
+  }
+}
+.icon-nav-toggler {
+  &:before {
+    content: $icon-nav-toggler;
+    color: $white;
+  }
+}
+.icon-search {
+  &:before {
+    content: $icon-search;
+    color: $white;
+  }
+}
+.icon-down-chevron {
+  &:before {
+    content: $icon-down-chevron;
+  }
+}
+.icon-image-gallery-solid {
+  &:before {
+    content: $icon-image-gallery-solid;
+  }
+}
+.icon-Line {
+  &:before {
+    content: $icon-Line;
+    color: #e4007e;
+  }
+}
+.icon-calendar {
+  &:before {
+    content: $icon-calendar;
+  }
+}
+.icon-Pen {
+  &:before {
+    content: $icon-Pen;
+  }
+}
+.icon-right-arrow {
+  &:before {
+    content: $icon-right-arrow;
+  }
+}
+.icon-left-arrow {
+  &:before {
+    content: $icon-left-arrow;
+  }
+}
+.icon-halfcircle {
+  &:before {
+    content: $icon-halfcircle;
+    color: $white;
+  }
+}
+.icon-a- {
+  &:before {
+    content: $icon-a-;
+    color: $white;
+  }
+}
+.icon-a {
+  &:before {
+    content: $icon-a;
+    color: $white;
+  }
+}
+.icon-letter {
+  &:before {
+    content: $icon-letter;
+  }
+}
+.icon-phone {
+  &:before {
+    content: $icon-phone;
+  }
+}
+.icon-location {
+  &:before {
+    content: $icon-location;
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook;
+    color: $white;
+  }
+}
+.icon-twitter {
+  &:before {
+    content: $icon-twitter;
+    color: $white;
+  }
+}
+.icon-linkedin {
+  &:before {
+    content: $icon-linkedin;
+    color: $white;
+  }
+}

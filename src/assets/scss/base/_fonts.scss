@@ -1,0 +1,101 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@font-face {
+    font-family: "roboto";
+    src: url("../../fonts/webfonts/roboto/Roboto-Regular.ttf") format('truetype'),
+         url("../../fonts/webfonts/roboto/Roboto-Regular.woff") format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("../../fonts/webfonts/roboto/Roboto-Italic.ttf") format('truetype'),
+         url("../../fonts/webfonts/roboto/Roboto-Italic.woff") format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "roboto-bold";
+    src: url("../../fonts/webfonts/roboto/Roboto-Bold.ttf") format('truetype'),
+         url("../../fonts/webfonts/roboto/Roboto-Bold.woff") format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto-bold";
+    src: url("../../fonts/webfonts/roboto/Roboto-BoldItalic.ttf") format('truetype'),
+         url("../../fonts/webfonts/roboto/Roboto-BoldItalic.woff") format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "roboto-light";
+    src: url("../../fonts/webfonts/roboto/Roboto-Light.ttf") format('truetype'),
+         url("../../fonts/webfonts/roboto/Roboto-Light.woff") format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto-light";
+    src: url("../../fonts/webfonts/roboto/Roboto-LightItalic.ttf") format('truetype'),
+         url("../../fonts/webfonts/roboto/Roboto-LightItalic.woff") format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "roboto-medium";
+    src: url("../../fonts/webfonts/roboto/Roboto-Medium.ttf") format('truetype'),
+         url("../../fonts/webfonts/roboto/Roboto-Medium.woff") format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto-medium";
+    src: url("../../fonts/webfonts/roboto/Roboto-MediumItalic.ttf") format('truetype'),
+         url("../../fonts/webfonts/roboto/Roboto-MediumItalic.woff") format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "open-sans";
+    src: url("../../fonts/webfonts/others/OpenSans-Regular.ttf") format('truetype'),
+         url("../../fonts/webfonts/others/OpenSans-Regular.woff") format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "open-sans";
+    src: url("../../fonts/webfonts/others/OpenSans-Italic.ttf") format('truetype'),
+         url("../../fonts/webfonts/others/OpenSans-Italic.woff") format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family:"somar";
+    src: url("../../fonts/webfonts/others/Somar-Regular.ttf") format('truetype'),
+         url("../../fonts/webfonts/others/Somar-Regular.woff") format('woff');
+}
+
+@font-face {
+    font-family:"somar-bold";
+    src: url("../../fonts/webfonts/others/Somar-Bold.ttf") format('truetype'),
+         url("../../fonts/webfonts/others/Somar-Bold.woff") format('woff');
+}
+
+@font-face {
+    font-family:"somar-medium";
+    src: url("../../fonts/webfonts/others/Somar-Medium.ttf") format('truetype'),
+         url("../../fonts/webfonts/others/Somar-Medium.woff") format('woff');
+}

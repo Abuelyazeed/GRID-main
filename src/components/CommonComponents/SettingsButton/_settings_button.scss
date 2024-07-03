@@ -1,0 +1,91 @@
+// .settings {
+//   width: fit-content;
+//   background-color: black;
+//   z-index: 2;
+//   padding: 1.4rem;
+//   padding-top: 1.71rem;
+//   padding-left: 1.6rem;
+//   &:hover {
+//     background-color: black;
+//   }
+//   &:focus {
+//     background-color: black;
+//   }
+// }
+.icon-settings {
+  color: white;
+  font-size: 2rem;
+}
+.icon-a-regular {
+  font-size: 2rem;
+  color: $white;
+}
+.icon-a,
+.icon-a-,
+.icon-halfcircle {
+  font-size: 2rem;
+}
+//dropdown of button
+.dropdownbtn-content {
+  background-color: black;
+  display: none;
+  position: absolute;
+  padding: 0.5rem;
+
+  width: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+//buttons of dropdown
+.dropdownbtn-content button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border: none;
+  background-color: black;
+}
+
+// .dropdownbtn-content a:hover {
+//   //background-color: #f1f1f1;
+// }
+
+// .dropdownbtn:hover .dropbtn {
+//   //background-color: #3e8e41;
+// }
+
+//show content when hovering on button
+.dropdownbtn:hover .dropdownbtn-content {
+  display: block;
+}
+
+//exit button
+.icon-exit-nav {
+  display: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+//remove setting icon on hover
+.dropdownbtn:hover .icon-settings {
+  //color: black;
+  display: none;
+}
+//display exit icon on hover
+.dropdownbtn:hover .icon-exit-nav {
+  display: block;
+}
+
+.dropbtn {
+  padding: 1.4rem;
+  padding-left: 1.9rem;
+
+  background-color: black;
+  border: none;
+}
+.dropdownbtn {
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  top: 50%;
+}

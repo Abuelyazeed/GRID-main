@@ -1,0 +1,63 @@
+.banner {
+    width: 100%;
+    height: to-rem(420);
+
+    .content {
+        color: $d-gray-4;
+        width: 100%;
+        height: 100%;
+        padding-left: 10rem;
+
+        .title {
+            font-family: roboto-bold;
+            font-size: to-rem(50);
+            padding-bottom: 1rem;
+        }
+
+        .breadcrumb {
+            font-size: to-rem(20);
+            font-family: roboto-light;
+            list-style: none;
+            display: inline;
+            color: $d-gray-4;
+            padding-left: 0;
+
+            li {
+                display: inline;
+                font-size: to-rem(18);
+
+                a {
+                    text-decoration: none;
+                    color: $d-gray-4;
+                }
+            }
+        }
+
+        .breadcrumb li+li:before {
+            padding: to-rem(8);
+            color: $d-gray-4;
+            content: "/\00a0";
+        }
+    }
+
+}
+
+.events-banner {
+    background: url(../../images/grid-events-breadcrumbs.jpg) center / cover no-repeat;
+}
+
+.articles-banner {
+    background: url(../../images/articles-breadcrumbs.jpg) center / cover no-repeat;
+}
+
+.event-details {
+    background: url(../../images/articles-breadcrumbs.jpg) center / cover no-repeat;
+}
+
+.media-gallery-banner {
+    background: url(../../images/media-gallery-breadcrumbs.jpg) center / cover no-repeat;
+}
+
+.our-news-banner {
+    background: url(../../images/our-news-breadcrumbs.jpg) center / cover no-repeat;
+}

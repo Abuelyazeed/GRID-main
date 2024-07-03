@@ -1,0 +1,43 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+$ltr-fonts: roboto-light "roboto-light" 300,
+roboto-medium "roboto-medium" 500,
+roboto "roboto-regular" normal;
+$ltr-fonts-ext: woff woff2;
+$ltr-fonts-folder: "roboto";
+$ltr-font-family-base:"roboto-regular";
+
+
+$rtl-fonts: somar-bold "somar" 600,
+somar-medium "somar-medium" 500,
+somar "somar-regular" normal;
+$rtl-fonts-ext: woff woff2;
+$rtl-fonts-folder: "other";
+$rtl-font-family-base:"somar-regular";
+
+$ltr-fonts: roboto-light "roboto-light" 300,
+roboto-medium "roboto-medium" 500,
+roboto "roboto-regular" normal;
+$ltr-fonts-ext: woff woff2;
+$ltr-fonts-folder: "roboto";
+$ltr-font-family-base:"roboto-regular";
+
+
+$rtl-fonts: somar-bold "somar" 600,
+somar-medium "somar-medium" 500,
+somar "somar-regular" normal;
+$rtl-fonts-ext: woff woff2;
+$rtl-fonts-folder: "other";
+$rtl-font-family-base:"somar-regular";
+
+:root{
+    --big-title: 7rem;
+    --title-font:4rem;
+    --sub-title-font:1rem;
+    --p-font:1.5rem;
+    font-size: --font-size;
+}
+$font-size: 16;
+

@@ -1,0 +1,174 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.title {
+  font-weight: 300;
+  font-size: 1.5rem;
+  font-family: roboto;
+}
+
+.text,
+.copyright {
+  color: $d-gray-4;
+  font-weight: 100;
+  font-size: 0.875rem;
+  font-family: roboto;
+}
+//Dont show mobile version copyright
+.copyright2 {
+  display: none;
+  color: $d-gray-4;
+  font-weight: 100;
+  font-size: 0.875rem;
+  font-family: roboto;
+  padding-top: 1rem;
+}
+
+.list-unstyled {
+  opacity: 90%;
+}
+
+.icon-facebook {
+  margin-right: 20px;
+}
+
+.icon-twitter {
+  margin-right: 20px;
+}
+
+.icon-linkedin {
+  margin-right: 20px;
+}
+
+.form-control {
+  font-size: 0.81rem;
+  width: 20px;
+  font-weight: 100;
+  opacity: 86%;
+  min-width: 1rem;
+  color: $d-gray-4;
+  &:focus {
+    color: $d-gray-4;
+  }
+}
+
+.form-control::placeholder {
+  color: $d-gray-4;
+  opacity: 87%;
+  //padding-right: 1rem;
+}
+.btn {
+  padding-top: 12px;
+  color: $primary;
+  right: 0;
+  //position: absolute;
+  &:active {
+    background-color: none;
+    border: none;
+    color: white;
+  }
+  &:hover {
+    background-color: none;
+    border: none;
+    color: white;
+  }
+  &:focus {
+    background-color: none;
+    border: none;
+    color: white;
+  }
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.first-column {
+  background-color: $black;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 10rem;
+  padding-right: 5rem;
+  .logo {
+    padding-bottom: 2rem;
+    max-width: 7.5rem;
+    //margin-top: 5rem;
+  }
+  .social {
+    font-size: 2rem;
+  }
+  .icon-down-chevron {
+    font-size: 0.625rem;
+  }
+}
+.second-column {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 5rem;
+  padding-right: 0;
+}
+
+.third-column {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  //padding-left: 11rem;
+  .icon-a {
+    font-size: 1.8rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .icon-a- {
+    font-size: 1.8rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .icon-halfcircle {
+    font-size: 1.8rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.second-column,
+.third-column {
+  background-color: $black-1;
+}
+
+.night-mode-button {
+  background-color: transparent;
+  border: none;
+  width: 0;
+}
+
+//MOBILE (less than 576px)
+@include media-breakpoint-down(sm) {
+  //dont show desktop version copyright
+  .copyright {
+    display: none;
+  }
+  //show mobile version copyright
+  .copyright2 {
+    display: block;
+  }
+  .first-column {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .second-column {
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+  }
+  .third-column {
+    padding-top: 0;
+    padding-left: 3rem;
+  }
+}

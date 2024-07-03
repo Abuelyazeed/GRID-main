@@ -1,0 +1,56 @@
+.media-card-sm {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: url(../../../../assets/images/second-card-component-image-1.jpg)
+    center / cover no-repeat;
+  height: to-rem(525);
+
+  &:hover {
+    .data {
+      transform: translateY(0);
+    }
+  }
+
+  .data {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: $white;
+    padding: 2rem;
+    z-index: 10;
+    transition: transform 0.3s;
+    transform: translateY(7.5rem);
+  }
+
+  .sec-title {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-family: Roboto-Bold;
+    height: 6rem;
+    width: 100%;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  .text {
+    font-family: Roboto-Light;
+    height: 5.7rem;
+    width: 100%;
+    margin: 0;
+    font-size: 1.25rem;
+  }
+}
+
+.media-card-sm:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70%;
+  z-index: 0;
+  background: linear-gradient(transparent 0%, $black 30%);
+}

@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+@mixin custom-font-family($dir, $pixel) {
+  direction: $dir;
+  @if $dir != rtl {
+    font-family: $ltr-font-family-base;
+    font-weight: $pixel;
+  } @else {
+    font-family: $rtl-font-family-base;
+    font-weight: $pixel;
+  }
+}
+//
+//@mixin variable($property, $variable, $fallback){
+//  #{$property}: $fallback;
+//  #{$property}: var($variable);
+//}

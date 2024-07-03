@@ -1,0 +1,84 @@
+.MediaDet{
+    .desc{
+        margin-left: 1rem;
+        padding-top: 2rem;
+    }
+    .img{
+        height: 30rem;
+    }
+    .sec-title-cont{
+        font-size: 1.5rem;
+        font-family: roboto;
+        .sec-title{
+            padding-left: 3.5rem;
+        }
+        .sec-title2{
+            padding-left: 4rem;
+        }
+    }
+    .cal{
+        color:#E4007E
+    }
+    .cal-title{
+        padding-left: 1rem
+    }
+    .title{
+        font-size: 3.75rem;
+        font-family: roboto-bold;
+    }
+    .pagination{
+        justify-content: center;
+        padding: 1rem;
+        color: black;
+    }
+    .paginationNext{
+        color: black;
+        li{
+            background-color: black;
+        }
+    }
+    .pag{
+        padding-left: 10rem;
+        padding-right: 10rem;
+        background-color: #EEEEEE;
+        .title-cont{
+            padding: 2rem;
+            .title{
+                font-size: 2rem;
+                            font-family: roboto-bold;
+                padding-left: 2.5rem;
+            }
+        }
+        .row{
+            margin-bottom: 2rem;
+        }
+    }
+        
+}
+.paginationItem{
+    margin-left: 5px;
+    color: black;
+    .page-link {
+        margin: 0.5rem;
+        font-size: 1rem;
+        color: black
+    }
+
+    &.active {
+        .page-link {
+            background-color: green;
+            border-color: green;
+        }
+    }
+}
+
+#dark .paginationItem .page-link{
+    background-color: $dark-bg-color-2;
+    color: $dark-text-color;
+    border-color: $black;
+}
+
+#dark .MediaDet, #dark .pag{
+    background-color: $dark-bg-color-1;
+    color: $dark-text-color;
+}

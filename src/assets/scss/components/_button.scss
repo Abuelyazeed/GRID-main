@@ -1,0 +1,64 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+%common-buttons {
+    border: none;
+    display: block;
+    text-align: center;
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'roboto-light';
+}
+
+.button-purple {
+    @extend %common-buttons;
+    font-size: to-rem(14);
+    width: to-rem(167);
+    height: to-rem(47);
+    line-height: to-rem(45);
+    background-color: $purple;
+    &:active{
+        background-color: $secondary;
+    }
+    &:hover{
+        background-color: $secondary;
+        color: $white;
+    }
+}
+
+.button-black {
+    @extend %common-buttons;
+    font-family: 'roboto-medium';
+    font-size: to-rem(14);
+    width: to-rem(192);
+    height: to-rem(63);
+    line-height: to-rem(65);
+    background-color: $black-2;
+    &:active{
+        background-color: $black-1;
+        color: $dark-text-color;
+    }
+    &:hover{
+        background-color: $black-3;
+        color: $white;
+    }
+}
+
+.button-white {
+    @extend %common-buttons;
+    color: $black;
+    font-size: to-rem(16);
+    width: to-rem(177);
+    height: to-rem(53);
+    line-height:to-rem(53);
+    background-color: $d-gray-6;
+    &:active{
+        background-color: $d-gray-6;
+    }
+    &:hover{
+        background-color: $white;
+        color: $secondary;
+    }
+}

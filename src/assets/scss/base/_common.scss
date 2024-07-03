@@ -1,0 +1,62 @@
+// add titles here
+
+//Common Title Styles
+
+.wrapper {
+  //display: grid;
+  //padding: side-values(3rem 10rem 4rem);
+  margin: auto;
+  width: 80%;
+}
+
+#light .main-banner-title {
+  font-family: roboto-bold;
+  font-size: 7rem;
+  color: $light-text-color;
+}
+
+#dark .main-banner-title {
+  font-family: roboto-bold;
+  font-size: 7rem;
+  color: $dark-text-color-2;
+}
+
+#light .secondary-title-black {
+  font-family: roboto-bold;
+  font-size: var(--title-font);
+  color: $light-text-color;
+
+  @media screen and (max-width: 992px) {
+    font-size: 1.8rem;
+  }
+}
+
+#dark .secondary-title-black {
+  font-family: roboto-bold;
+  font-size: 5rem;
+  color: $dark-text-color;
+
+  @media screen and (max-width: 992px) {
+    font-size: 1.8rem;
+  }
+}
+
+.secondary-title-white {
+  font-family: roboto-bold;
+  font-size: 5rem;
+  color: $white;
+}
+
+#light .subtitle-magenta {
+  font-family: roboto-medium;
+  font-size: 1rem;
+  color: $pink;
+  text-transform: uppercase;
+}
+
+#dark .subtitle-magenta {
+  font-family: roboto-medium;
+  font-size: 1rem;
+  color: $l-pink;
+  text-transform: uppercase;
+}

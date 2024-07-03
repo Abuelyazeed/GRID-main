@@ -1,0 +1,116 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.discover-more-button{
+  width: to-rem(300);
+  height: to-rem(80);
+  font-size: to-rem(20);
+  line-height: to-rem(90);
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.banner-text{
+  font-size: 1.78rem;
+  font-family: roboto-light;
+}
+
+.main-banner-title{
+    font-size: 5.5rem !important;
+}
+
+.banner-row{
+  position:relative;
+}
+
+.right-column{
+  overflow:hidden;
+  background-color: $gray;
+  padding: 0;
+}
+
+.slider-buttons{
+  padding-top: 3rem;
+  padding-left: 1rem;
+  font-family: roboto-bold;
+  text-transform: uppercase;
+  font-size: to-rem(22);
+  cursor: pointer;
+}
+
+#dark .prev-button, #dark .next-button{
+  color: $dark-text-color;
+}
+
+.prev-button{
+  padding-left: 1rem;
+}
+
+.next-button{
+  padding-right: 1rem;
+}
+
+.banner-carousel{
+  object-fit: cover;
+}
+
+.left-column{
+  position: relative;
+  z-index: 1;
+  left: 0;
+  background-color: $gray;
+  padding: 0;
+}
+
+.left-column:before, .left-column:after {
+  background-color: $gray;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.left-column:after {
+  left: 100%;
+  top: 0;
+  width: to-rem(100);
+  background: linear-gradient(to top left, transparent 50%, $gray 50%);
+  background-position: top left;
+  background-repeat: repeat-y;
+  background-size: to-rem(100) to-rem(150);
+  height: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .left-column:after {
+      content: '';
+      position: absolute;
+      top: 100%;  
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      display: block;
+      height: to-rem(145);
+      background-size: to-rem(180) to-rem(145);
+      background-image: linear-gradient(to bottom left, $gray 50%, transparent 50%);
+      background-position: 0 0;
+      background-repeat: repeat-x;
+      }
+}
+
+#dark .left-column, #dark .right-column{
+  background-color: $dark-bg-color-1;
+  color: $dark-text-color;
+}
+
+#dark .left-column:after {
+  background-image: linear-gradient(to bottom right, $dark-bg-color-1 50%, transparent 50%);
+}
+
+@media only screen and (max-width: 1200px) {
+  #dark .left-column:after {
+    background-image: linear-gradient(to bottom right, $dark-bg-color-1 50%, transparent 50%);
+  }
+}

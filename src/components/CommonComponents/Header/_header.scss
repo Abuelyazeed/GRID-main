@@ -1,0 +1,212 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+
+  .brand-logo {
+    height: 50px;
+    padding: side-values(10px 55px);
+    cursor: pointer;
+
+    @media screen and (max-width: 1200px){
+      padding: side-values(15px);
+    }
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+}
+
+.container {
+  &.center-content {
+    padding: 0;
+
+    @media screen and (min-width: 1200px) {
+      justify-content: center;
+    }
+  }
+}
+
+.navbar-nav {
+  li {
+    padding: side-values(0 10px);
+  }
+
+  @media screen and (max-width: 1200px){
+    padding: side-values(0);
+    text-transform: uppercase;
+
+    .nav-link {
+      padding-right: $navbar-nav-link-padding-x;
+      padding-left: $navbar-nav-link-padding-x;
+    }
+  }
+}
+
+.navbar-nav-scroll {
+  @media screen and (max-width: 1200px) {
+    overflow: visible;
+
+    .nav-item {
+      border: 0.5px solid $d-gray-2;
+
+      &.dropdown {
+        .dropdown-toggle.show {
+          border-style: side-values(none solid none none);
+          border-color: $d-gray-2;;
+          border-width: 0.5px;
+          width: 69%;
+          transition: width 3s 7s;
+        }
+      }
+    }
+  }
+}
+
+.nav-link {
+  &.dropdown-toggle {
+    color: $white;
+
+    &::after {
+      display: none;
+      border: none;
+      padding: side-values(0);
+      margin: side-values(0);
+    }
+  }
+
+  &.show {
+    @media screen and (max-width: 1200px) {
+      .icon-down-arrow {
+        transform: rotate(180deg);
+        transition: all 0.3s ease-out;
+        display: inline-block;
+        padding: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+}
+
+.dropdown-menu {
+  text-align: $left;
+  border-radius: side-values(0);
+  background-color: $d-gray-8;
+  padding: side-values(10px 0 20px);
+  margin: side-values(0 0 0 15px);
+  border: none;
+
+  .dropdown-item {
+    @include custom-font-family($dir, 300px);
+    color: $black-4;
+    padding: side-values(15px 100px 15px 20px);
+
+    @media screen and (max-width: 1200px) {
+      color: $d-gray-8;
+    }
+  }
+
+  .dropdown-item:hover {
+    color: $secondary;
+    background-color: $d-gray-8;
+    padding: side-values(15px 90px 15px 20px);
+
+    .route {
+      padding: side-values(0 0 0 10px);
+      margin: side-values(0 0 0 5px);
+
+      @media screen and (max-width: 1200px) {
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    &:before {
+      content:"";
+      display: inline;
+      width: 9px;
+      height: 1.5px;
+      background: $secondary;
+      position: absolute;
+      margin: side-values(10px auto auto 0);
+
+      @media screen and (max-width: 1200px) {
+        display: none;
+        margin: 0;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      color: $d-gray-8;
+      background-color: $black-4;
+      padding: side-values(15px 100px 15px 20px);
+    }
+  }
+
+  @media screen and (max-width: 1200px){
+    background-color: $black-4;
+    width: 65%;
+  }
+}
+
+.navbar-nav .dropdown-menu {
+  position: absolute;
+  @media screen and (max-width: 1200px) {
+    text-transform: uppercase;
+  }
+}
+
+.navbar-search-lang {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: side-values(initial intial initial 30px);
+
+  .btn {
+    padding: 0 20px;
+    margin: side-values(auto auto auto 30px);
+    border-radius: 0;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .icon-down-arrow {
+      display: inline-block;
+      margin: side-values(auto auto auto 40px);
+    }
+  }
+
+  .profile {
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      img {
+        height: 35px;
+        border-radius: 50%;
+        border: 1.5px solid $white;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .dropdown-menu {
+      width: 100%;
+    }
+
+    .search {
+      display: none;
+    }
+  }
+}

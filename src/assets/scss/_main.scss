@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import "abstract/color", "abstract/directional", "abstract/variables",
+  "abstract/mixins", "abstract/functions";
+
+// 2. Vendors
+@import "vendors/bootstrap";
+
+// 3. Base stuff
+@import "base/fonts", "base/base", "base/common";
+
+// 4. Icons
+@import "icons/variables", "icons/styles";
+
+// 5. Layout-related sections
+@import "../../components/CommonComponents/Header/header", "layout/breadcrumbs",
+"../../components/CommonComponents/Footer/footer",
+"../../components/HomePageComponents/MediaSection/media",
+"../../components/HomePageComponents/NewsSection/news";
+// 6. Components
+@import "components/button",
+"components/card-with-background-image", "components/breadcrumbs",
+"../../components/CommonComponents/ListingPagination/listing-pagination",
+"../../components/CommonComponents/SettingsButton/settings_button",
+"../../components/CommonComponents/ListingSort/listing-sort";
+
+// 7. Page-specific style // 7. Page-specific style
+@import "pages/home",
+"../../components/HomePageComponents/BecomeAMemberSection/become-a-member-section",
+"../../components/HomePageComponents/ArticleSection/article-section",
+"../../components/HomePageComponents/EventSection/event-section",
+"../../components/CommonComponents/CardTopImg/card-with-top-img",
+"../../components/HomePageComponents/AboutGridSection/about-grid-section",
+"../../components/HomePageComponents/TopSlider/top-slider",
+"../../components/HomePageComponents/SkipToMenusHome/skip-to-menus-home", "pages/articles",
+"pages/contact", "../../components/InnerPageComponents/ArticlesPage/articles-page-listing",
+"../../components/InnerPageComponents/EventsPage/event-page-listing", "pages/media-gallery",
+"../../components/CommonComponents/NotFoundPage/not-found-page", "../../components/InnerPageComponents/EventDetailsPage/event-details-page", "pages/registeration",
+ "pages/news";
+
+@import "../../components/InnerPageComponents/MediaPage/Details/details", "../../components/InnerPageComponents/MediaPage/MediaCard/MediaCard"; // 8. Themes
+
+
+.big-font{
+  font-size: 18px !important;
+}
+
+.default-font{
+  font-size: 16px !important;  
+}
+
+.small-font{
+  font-size: 11px !important;
+}

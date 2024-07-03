@@ -1,0 +1,28 @@
+@if $dir != ltr and $dir !=rtl {
+  $dir: rtl;
+}
+
+@function if-ltr($if, $else:null){
+  @if $dir !=rtl {
+    @return $if;
+  }
+  @else {
+    @return $else;
+  }
+}
+
+@function if-rtl($if, $else:null){
+    @return if-ltr($else, $if);
+}
+
+$left: if-ltr(left, right);
+$right: if-ltr(right, left);
+
+@function side-values($values) {
+  @if $dir == rtl and length($values) >= 4 {
+    @return nth($values, 1) nth($values, 4) nth($values, 3) nth($values, 2);
+  }
+  @else {
+    @return $values;
+  }
+}
