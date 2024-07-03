@@ -1,5 +1,5 @@
-import React from "react";
-import bannerimg from "../../../assets/images/sec2-image.webp";
+import React from 'react';
+import bannerimg from '../../../assets/images/sec2-image.jpg';
 
 const AboutGridAr = () => {
   return (

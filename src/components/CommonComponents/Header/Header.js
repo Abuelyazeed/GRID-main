@@ -1,8 +1,8 @@
-import React from "react";
-import headerlogo from "../../../assets/images/header-logo.svg";
-import ellipseimg from "../../../assets/images/ellipse-img.webp";
-import { Link, useLocation, useNavigate } from "react-router-dom";
-import Directory from "../../../utilities/Directory";
+import React from 'react';
+import headerlogo from '../../../assets/images/header-logo.svg';
+import ellipseimg from '../../../assets/images/ellipse-img.jpg';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import Directory from '../../../utilities/Directory';
 
 const Header = () => {
   const navigate = useNavigate();
@@ -11,17 +11,17 @@ const Header = () => {
   const handleLanguageChange = (event) => {
     event.preventDefault();
 
-    sessionStorage.setItem("language", Directory.AR);
+    sessionStorage.setItem('language', Directory.AR);
 
     if (location === `/${Directory.EN}`) {
       navigate(Directory.AR);
     } else {
-      navigate(location.replace("/en/", "/ar/"));
+      navigate(location.replace('/en/', '/ar/'));
     }
   };
 
   const BackHome = () => {
-    if (sessionStorage.getItem("language") === "en") {
+    if (sessionStorage.getItem('language') === 'en') {
       navigate(Directory.EN);
     } else {
       navigate(Directory.AR);
@@ -64,7 +64,7 @@ const Header = () => {
                 <li>
                   <Link
                     className="dropdown-item"
-                    to={Directory.EN + "/" + Directory.ABOUT_GRID}
+                    to={Directory.EN + '/' + Directory.ABOUT_GRID}
                   >
                     <span className="route">Our Story</span>
                   </Link>
@@ -192,7 +192,7 @@ const Header = () => {
                 <li>
                   <Link
                     className="dropdown-item"
-                    to={Directory.EN + "/" + Directory.SUCCESS_STORIES}
+                    to={Directory.EN + '/' + Directory.SUCCESS_STORIES}
                   >
                     <span className="route">Success Stories</span>
                   </Link>
@@ -200,7 +200,7 @@ const Header = () => {
                 <li>
                   <Link
                     className="dropdown-item"
-                    to={Directory.EN + "/" + Directory.MEDIA_GALLERY}
+                    to={Directory.EN + '/' + Directory.MEDIA_GALLERY}
                   >
                     <span className="route">Media Gallery</span>
                   </Link>

@@ -1,5 +1,5 @@
-import React from "react";
-import bannerimg from "../../../assets/images/sec2-image.webp";
+import React from 'react';
+import bannerimg from '../../../assets/images/sec2-image.jpg';
 
 const AboutGrid = () => {
   return (
@@ -17,12 +17,12 @@ const AboutGrid = () => {
             <p>
               Whether you’re an established enterprise or a growing startup,
               discover flexible spaces and solutions to move your business
-              forward.{" "}
+              forward.{' '}
             </p>
             <p>
               FinTech has recently become a promising and emerging industry
               across the globe that uses technology and innovation to broaden
-              the frontiers of financial activities.{" "}
+              the frontiers of financial activities.{' '}
             </p>
           </div>
           <a

@@ -4,7 +4,7 @@
   .become-a-member-section {
     width: 100%;
     display: block;
-    background-image: url("../../../assets/images/become-a-member.webp");
+    background-image: url('../../../assets/images/become-a-member.jpg');
     background-size: cover;
     background-position: 0 -12rem;
 
@@ -13,7 +13,7 @@
     }
 
     .img-gradient {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       top: 0;
@@ -65,7 +65,7 @@
 
   .semi-circles {
     &:after {
-      content: "";
+      content: '';
       bottom: 0;
       position: absolute;
       width: 100%;
@@ -82,7 +82,7 @@
     }
 
     #dark &:after {
-      content: "";
+      content: '';
       bottom: 0;
       position: absolute;
       width: 100%;
