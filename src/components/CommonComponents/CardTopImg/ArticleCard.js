@@ -1,6 +1,6 @@
 import React from 'react';
 import cardimg from '../../../assets/images/card-1-image.jpg';
-import { BrowserRouter as Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const ArticleCard = () => {
   return (
