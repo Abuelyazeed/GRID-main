@@ -50,7 +50,7 @@ const App = () => {
       navigate(Directory.EN);
       sessionStorage.setItem('language', Directory.EN);
     }
-  }, []);
+  }, [navigate]);
 
   const location = useLocation().pathname.substring(0, 3);
 
