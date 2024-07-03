@@ -1,8 +1,7 @@
-import React, { Component } from "react";
-import image from "../../../../assets/images/MediaDet.jpg";
-import MediaCardSM from "../MediaCard/MediaCard";
-import Pagination from "react-bootstrap/Pagination";
-import MediaBreadcrumb from "../../../CommonComponents/breadcrumb/media-gallery-breadcrumbs";
+import React, { Component } from 'react';
+import MediaCardSM from '../MediaCard/MediaCard';
+import Pagination from 'react-bootstrap/Pagination';
+import MediaBreadcrumb from '../../../CommonComponents/breadcrumb/media-gallery-breadcrumbs';
 class MediaPage extends Component {
   state = {};
   render() {

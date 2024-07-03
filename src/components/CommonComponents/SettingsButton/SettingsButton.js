@@ -1,37 +1,37 @@
-import React from "react";
+import React from 'react';
 
 const SettingsButton = ({ toggleTheme }) => {
-  let bigFont = 0;
-  let smallFont = 0;
-  const collection = document.getElementsByTagName("html")[0];
+  // let bigFont = 0;
+  // let smallFont = 0;
+  const collection = document.getElementsByTagName('html')[0];
   function incFont() {
-    if (collection.classList.contains("default-font")) {
-      collection.classList.toggle("default-font");
+    if (collection.classList.contains('default-font')) {
+      collection.classList.toggle('default-font');
     }
-    if (collection.classList.contains("small-font")) {
-      collection.classList.toggle("small-font");
+    if (collection.classList.contains('small-font')) {
+      collection.classList.toggle('small-font');
     }
-    collection.classList.add("big-font");
+    collection.classList.add('big-font');
   }
 
   function decFont() {
-    if (collection.classList.contains("big-font"))
-      collection.classList.toggle("big-font");
+    if (collection.classList.contains('big-font'))
+      collection.classList.toggle('big-font');
 
-    if (collection.classList.contains("default-font"))
-      collection.classList.toggle("default-font");
+    if (collection.classList.contains('default-font'))
+      collection.classList.toggle('default-font');
 
-    collection.classList.add("small-font");
+    collection.classList.add('small-font');
   }
 
   function defaultFont() {
-    if (collection.classList.contains("big-font"))
-      collection.classList.toggle("big-font");
+    if (collection.classList.contains('big-font'))
+      collection.classList.toggle('big-font');
 
-    if (collection.classList.contains("small-font"))
-      collection.classList.toggle("small-font");
+    if (collection.classList.contains('small-font'))
+      collection.classList.toggle('small-font');
 
-    collection.classList.add("default-font");
+    collection.classList.add('default-font');
   }
 
   return (

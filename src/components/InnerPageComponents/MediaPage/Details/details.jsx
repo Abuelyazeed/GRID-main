@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import image from "../../../../assets/images/MediaDet.jpg";
-import MediaCardSM from "../MediaCard/MediaCard";
-import Pagination from "react-bootstrap/Pagination";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react';
+import image from '../../../../assets/images/MediaDet.jpg';
+import MediaCardSM from '../MediaCard/MediaCard';
+import Pagination from 'react-bootstrap/Pagination';
+import { Link } from 'react-router-dom';
 
 class MediaDetails extends Component {
   state = {};
@@ -12,7 +12,7 @@ class MediaDetails extends Component {
         <div className="wrapper ">
           <div className="row">
             <div className="col">
-              <img className="img" src={image} />
+              <img className="img" src={image} alt="A man typing on computer" />
             </div>
             <div className="col desc">
               <h3 className="sec-title-cont">
